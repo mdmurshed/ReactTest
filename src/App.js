@@ -21,6 +21,8 @@ import ClickCounter2 from './Test/updateRef/ClickCounter2';
 import HoverCounter2 from './Test/updateRef/HoverCounter2';
 import UserRenderProps from './Test/updateRef/UserRenderProps';
 import Counter from './Test/updateRef/Counter';
+import ComponentA from './Test/Context/ComponentA';
+import { UserProvider } from './Test/Context/UserContext';
 function App() {
   return (
     <div className="App">
@@ -78,7 +80,9 @@ function App() {
       <Counter render={(count, incrementCount) => (
         <HoverCounter2 count={count} incrementCount={incrementCount} />
       )}/>   */}
-        
+      <UserProvider value="murshed">
+          <ComponentA/>
+      </UserProvider>
 
     </div>
   )
