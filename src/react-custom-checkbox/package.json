@@ -1,0 +1,27 @@
+{
+  "name": "@murshed/react-custom-checkbox",
+  "version": "1.0.0",
+  "description": "testing react custom check box",
+  "main": "CustomChecksBox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmurshed/NPM-react-package.git"
+  },
+  "author": "mdmurshed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdmurshed/NPM-react-package/issues"
+  },
+  "homepage": "https://github.com/mdmurshed/NPM-react-package#readme",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.16.0",
+    "@babel/preset-react": "^7.16.0"
+  }
+}
