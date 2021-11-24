@@ -1,21 +1,17 @@
 import React from 'react';
 // import { Form } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-
-const CustomChecksBox = ({ type, id, label, name, disable, change, check }) => {
+import '../../styles.css'
+export const CustomChecksBox = ({ type, id, label, name, disable, change, check }) => {
   return (
-    <div style={{
-      // width:'fit-content'
-      display:'flex',
-      width:'fix-content',
-    }}>
-       <div><input
+    <div className='customCheckbox'>
+      <div className='customInput'><input
         type={type}
         id={id}
         name={name}
         defaultChecked={check}
-        /></div>
-        <div>{label}</div>
+      /></div>
+      <div className='customInput'>{label}</div>
     </div>
   );
 };
@@ -28,4 +24,3 @@ CustomChecksBox.propTypes = {
   change: PropTypes.func,
   check: PropTypes.bool
 };
-export default CustomChecksBox;

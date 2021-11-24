@@ -1,0 +1,8 @@
+.customCheckbox{
+  display : flex;
+  width:fit-content;
+  background-color:#dae4ed;
+}
+.customInput{
+  width: fit-content;
+}

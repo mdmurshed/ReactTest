@@ -37,9 +37,45 @@ import DocTitleTwo from './CustomHook/DocTitleTwo';
 import CounterOne from './CustomHookCounter/CounterOne';
 import CounterTwo from './CustomHookCounter/CounterTwo';
 import UserFrom from './CustomHook/UserFrom';
+import {Button} from 'gs-component'
+import {useState} from 'react'
+import { CustomChecksBox } from './react-custom-checkbox/src';
 function App() {
+  
+  // const [valid,  setValid] = useState(false);
+  // const [password, setPassword] = useState('');
+  // const [username, setUsername] = useState('');
+
+  // const passwordRequirements = [
+  //   {
+  //     text: 'Must be at least 8 characters',
+  //     validator: val => val.length >= 8,
+  //   },
+  //   {
+  //     text: 'Must contain at least one number',
+  //     validator: val => /\d/g.test(val),
+  //   },
+  //   {
+  //     text: 'Must contain at least one lower-case letter',
+  //     validator: val => /[a-z]/g.test(val),
+  //   },
+  //   {
+  //     text: 'Must contain at least one upper-case letter',
+  //     validator: val => /[A-Z]/g.test(val),
+  //   }
+  // ];
   return (
     <div className="App">
+      <CustomChecksBox type="checkbox" label="male"/>
+      {/* <Requirements
+        value={password}
+        requirements={passwordRequirements}
+        onValidChange={isValid => setValid(isValid)}
+      />
+     <input placeholder='Username' value={username} onChange={e => setUsername(e.target.value)} />
+      <input placeholder='Password' type='password' value={password} onChange={e => setPassword(e.target.value)} />
+
+      <button disabled={!valid || !username}>Sign Up</button> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -150,9 +186,9 @@ function App() {
       <HookTimer/>
       <DocTitleOne/>
       <DocTitleTwo/> */}
-      <CounterOne/>
-      <CounterTwo/>
-      <UserFrom/>
+      {/* <CounterOne/> */}
+      {/* <CounterTwo/> */}
+      {/* <UserFrom/> */}
     </div>
   )
 }
